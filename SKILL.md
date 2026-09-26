@@ -7,7 +7,7 @@ description: "Write or revise authoritative, research-backed editorial guides us
 
 Create an article that helps a reader make sense of a topic, not a keyword-shaped product page. Match the reference articles' editorial architecture without copying their wording or imitating an individual author's voice.
 
-Read [references/semrush-article-format-and-eeat-brief.md](references/semrush-article-format-and-eeat-brief.md) before drafting. It is the primary editorial brief and public description of this skill.
+Read [references/semrush-article-format-and-eeat-brief.md](references/semrush-article-format-and-eeat-brief.md) before drafting. It contains the research basis and detailed editorial brief for this skill.
 
 ## Choose the Right Workflow
 
