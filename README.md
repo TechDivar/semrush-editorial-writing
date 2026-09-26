@@ -1,8 +1,10 @@
-# Semrush Editorial Writing Skill
+# Semrush Editorial Writing Framework
 
-A reusable Codex skill for writing clear, research-backed editorial guides with strong E-E-A-T signals.
+A reusable AI writing framework for producing clear, research-backed editorial guides with strong E-E-A-T signals.
 
-It applies editorial patterns observed in high-quality Semrush guides—without copying Semrush's wording, branding, or an individual writer's voice.
+It is packaged as a native Codex skill, but its instructions are plain Markdown and can also be used with ChatGPT, Claude, Gemini, Cursor, GitHub Copilot, and other AI assistants.
+
+The framework applies editorial patterns observed in high-quality Semrush guides—without copying Semrush's wording, branding, or an individual writer's voice.
 
 ## What This Skill Does
 
@@ -41,7 +43,9 @@ The skill uses these principles:
 
 The research behind these principles is documented in the [Semrush article format and E-E-A-T brief](references/semrush-article-format-and-eeat-brief.md).
 
-## Install the Skill
+## Use It With Your AI Assistant
+
+### Codex
 
 Ask Codex to install the skill from:
 
@@ -57,15 +61,40 @@ git clone https://github.com/TechDivar/semrush-editorial-writing.git ~/.codex/sk
 
 Restart or reopen Codex after installation if the skill does not appear immediately.
 
+### ChatGPT, Claude, or Gemini
+
+Download or attach these files to your chat, project, or custom assistant:
+
+1. [`SKILL.md`](SKILL.md)
+2. [`semrush-article-format-and-eeat-brief.md`](references/semrush-article-format-and-eeat-brief.md)
+3. [`editorial-format.md`](references/editorial-format.md)
+4. [`comparisons-eeat-and-pionex.md`](references/comparisons-eeat-and-pionex.md) when writing a comparison or Pionex article
+
+Then prompt the assistant:
+
+```text
+Follow SKILL.md and its relevant reference files as the editorial instructions for this task. Write a source-backed guide about [topic] for [reader/brand].
+```
+
+### Claude Code, Gemini CLI, Cursor, or GitHub Copilot
+
+Clone or copy the repository into your project. Tell the assistant to read `SKILL.md` and the relevant files in `references/` before drafting.
+
+These tools use different names for project rules and agent instructions. The repository does not claim automatic installation on every platform; the Markdown instructions remain portable even when native skill discovery is unavailable.
+
+### Any Other AI Tool
+
+Paste `SKILL.md` into the tool's instruction area and provide the relevant reference files as context. If the tool accepts only one file, start with `SKILL.md` and the [full editorial brief](references/semrush-article-format-and-eeat-brief.md).
+
 ## How to Use It
 
-Invoke the skill by name:
+In Codex, invoke the skill by name:
 
 ```text
 Use $semrush-editorial-writing to write a source-backed guide about [topic].
 ```
 
-Example prompts:
+The remaining example prompts work with any capable AI assistant after the files have been provided:
 
 ```text
 Use $semrush-editorial-writing to compare three crypto cards. Show the fee calculations, risks, methodology, and visual recommendations.
@@ -123,7 +152,7 @@ semrush-editorial-writing/
     └── comparisons-eeat-and-pionex.md
 ```
 
-- [`SKILL.md`](SKILL.md) contains the reusable instructions Codex follows.
+- [`SKILL.md`](SKILL.md) contains the reusable instructions. Its YAML header enables native discovery in skill-aware tools, while the Markdown body is readable by other assistants.
 - [`semrush-article-format-and-eeat-brief.md`](references/semrush-article-format-and-eeat-brief.md) documents the analysis of the reference Semrush articles.
 - [`editorial-format.md`](references/editorial-format.md) provides detailed article-structure guidance.
 - [`comparisons-eeat-and-pionex.md`](references/comparisons-eeat-and-pionex.md) covers comparisons, calculations, disclosures, and Pionex-specific safeguards.
