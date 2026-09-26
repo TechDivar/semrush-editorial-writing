@@ -1,0 +1,4 @@
+interface:
+  display_name: "Semrush Editorial Writing"
+  short_description: "Research-backed editorial guides with E-E-A-T"
+  default_prompt: "Use $semrush-editorial-writing to write a source-backed article with useful tables, examples, and visual recommendations."
